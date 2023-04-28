@@ -1,9 +1,11 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "./page.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
-  return <main className={styles.main}></main>;
+  let name = "park";
+  let link = "http://google.com";
+  return (
+    <>
+      <h4 className="title">Apple Fresh</h4>
+      <p className="title-sub">by dev {name}</p>
+      <a href={link}>링크</a>
+    </>
+  );
 }
